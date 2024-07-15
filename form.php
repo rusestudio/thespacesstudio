@@ -21,5 +21,11 @@ if($rs)
 {
 	echo "Feedback summited";
 }
+	}
+else
+{
+	echo "failed";
+	
+}
 
 ?>
