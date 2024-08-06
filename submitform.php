@@ -20,7 +20,7 @@ $comment = $_POST['comment'];
 
 //insert data to database table
 $sql = "INSERT INTO form_tbl (name,email,country,comment) VALUES ('$name', '$email', '$country', '$comment')";
-if ($conn->query($sql)===TRUE){
+if ($conn->query($sql)==TRUE){
 	echo "Form Submitted Successfully";
 }
 else {
