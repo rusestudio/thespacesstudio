@@ -121,20 +121,21 @@
         <div class="center">
             <fieldset>
                 <h3>Feedback Form</h3>
-                <form action="submitform.php" method="post">
+                <form action="https://formspree.io/f/mvgprzgq" method="post">
                     <label>Name: </label>
-                    <input type="text" name="name"><br>
+                    <input type="text" name="name" required><br>
                     <label>Email: </label>
-                    <input type="text" name="email"><br>
+                    <input type="email" name="email" required><br>
                     <label>Country: </label>
-                    <input type="text" name="country"><br>
+                    <input type="text" name="country" required><br>
                     <label>Comment:</label>
-                    <textarea name="comment"></textarea><br>
+                    <textarea name="comment" required></textarea><br>
 
                     <input type="submit" value="Submit">
                 </form>
             </fieldset>
         </div>
+    </div>
 
 
 <div class="footer">
