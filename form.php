@@ -17,7 +17,7 @@ $country = $_POST['country'];
 $comment = $_POST['comment'];
 
 //insert data to database table
-$sql = "INSERT INTO 'form_tbl' ('Id', 'name', 'email', 'country', 'comment') VALUES ( '0', $name', '$email', '$country', '$comment')";
+$sql = "INSERT INTO `form_tbl` (`Id`, `name`, `email`, `country`, `comment`) VALUES ( '0', $name', '$email', '$country', '$comment')";
 if ($conn->query($sql)===TRUE){
 	echo "Form Submitted Successfully";
 }
