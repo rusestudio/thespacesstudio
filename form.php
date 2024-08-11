@@ -1,11 +1,9 @@
 <?php
 
 //connect to database
-$host = "localhost";
-$username = "";
-$password = "";
-$database = "rusestudio";
-$conn = new mysqli($host, $username, $password, $database); //must inorder like above
+if(isset($_POST['name']))
+{
+$conn = mysqli_connect('localhost', 'root', '','rusestudio');
 
 //check if connect
 if ($conn-> connect_error){
@@ -19,8 +17,8 @@ $country = $_POST['country'];
 $comment = $_POST['comment'];
 
 //insert data to database table
-$sql = "INSERT INTO form_tbl (name,email,country,comment) VALUES ('$name', '$email', '$country', '$comment')";
-if ($conn->query($sql)==TRUE){
+$sql = "INSERT INTO 'form_tbl' ('Id', 'name', 'email', 'country', 'comment') VALUES ( '0', $name', '$email', '$country', '$comment')";
+if ($conn->query($sql)===TRUE){
 	echo "Form Submitted Successfully";
 }
 else {
