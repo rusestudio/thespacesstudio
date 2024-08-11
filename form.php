@@ -1,8 +1,6 @@
 <?php
 
 //connect to database
-if(isset($_POST['name']))
-{
 $conn = mysqli_connect('localhost', 'root', '','rusestudio');
 
 //check if connect
@@ -20,6 +18,7 @@ $comment = $_POST['comment'];
 $sql = "INSERT INTO `form_tbl` (`Id`, `name`, `email`, `country`, `comment`) VALUES ( '0', $name', '$email', '$country', '$comment')";
 if ($conn->query($sql)===TRUE){
 	echo "Form Submitted Successfully";
+}
 }
 else {
 	echo "Error: ".$sql."<br>".$conn->error;
