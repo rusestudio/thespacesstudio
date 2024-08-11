@@ -2,8 +2,8 @@
 
 //connect to database
 $host = "localhost";
-$username = "root";
-$password = "gandaksa33";
+$username = "";
+$password = "";
 $database = "rusestudio";
 $conn = new mysqli($host, $username, $password, $database); //must inorder like above
 
